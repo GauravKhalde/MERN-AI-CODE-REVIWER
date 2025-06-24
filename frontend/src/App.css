@@ -1,0 +1,103 @@
+  * {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    height: 100%;
+    width: 100%;
+  }
+
+  main {
+    height: 100%;
+    width: 100%;
+    padding: 1.5rem;
+    display: flex;
+    gap: 1rem;
+  }
+
+  main .left,
+  main .right {
+    height: 100%;
+    flex-basis: 50%;
+    border-radius: 0.7rem;
+  }
+
+  main .left {
+    background-color: #000000;
+      position: relative;
+
+  }
+
+  .left .code,.code pre,.code pre code{
+      height: 100%;
+      width: 100%;
+      margin: 0;
+      border-radius: 0.7rem;
+      background-color: #0c0c0c;
+  }
+
+  main .right {
+    background-color: #343434;
+
+  }
+
+  main .left .review {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: rgb(219, 219, 255);
+    color: #000000;
+    padding: 0.5rem 2rem;
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 0.7rem;
+  }
+
+
+  .code textarea {
+    outline: none;
+    caret-color: white;        /* 👈 makes cursor visible */
+    color: white;              /* 👈 text visible */
+    background: transparent;   /* 👈 matches editor background */
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
+  }
+  .code textarea {
+    color: white; /* ensures even non-highlighted code is readable */
+  }
+  .left .code {
+    background-color: #0c0c0c;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  .code pre,
+  .code code {
+    color: white !important;          /* 👈 force visible text */
+    font-family: "Fira Code", monospace;
+    font-size: 16px;
+    white-space: pre-wrap;            /* for line wrapping */
+    word-break: break-word;
+  }
+
+  .code {
+    overflow: auto;
+  }
+
+
+
+  main .right {
+  background-color: #343434;
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  overflow: auto;
+  color: white;               /* 👈 ensures all text is white */
+  /* white-space: pre-wrap;      👈 maintains line breaks */
+
+}
+
+
